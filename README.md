@@ -1,4 +1,4 @@
-## This is tutorial handler. 
+## This is tutorial handler
 Ever tried to collect snippets (screenshots) of a tutorial for future purposes (revision).
 This is simple offline solution for this problem.
 
