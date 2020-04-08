@@ -2,6 +2,8 @@ This is tutorial handler.
 Ever tried to collect snippets (screenshots) of a tutorial for future purposes.
 This is simple solution for this problem.
 
+Delete all files from `assets/`
+
 Steps while capturing snippets:
     Run `watchman.py` file
         `$python3 watchman.py`

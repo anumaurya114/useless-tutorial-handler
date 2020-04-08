@@ -1,6 +1,7 @@
 
 import os
 import time
+import sys
 Update_interval = 1
 count_update = 0
 def watch(files,dir):
@@ -64,4 +65,7 @@ def main():
         if watch(files,dir):
             files = os.listdir(dir)
         time.sleep(Update_interval)
+
+Update_interval =  float(sys.argv[1])
+print("Update interval is set to ",Update_interval)
 main()
