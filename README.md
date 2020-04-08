@@ -11,7 +11,9 @@ This is simple offline solution for this problem.
 
 3. Steps while capturing snippets:<br/>
     Run `watchman.py` file<br/>
-        `$python3 watchman.py`<br/>
+        `$python3 watchman.py time`<br/>
+        `$python3 watchman.py 1`<br/>
+    Update interval is set to 1 (sec).
     Whenever take a new screenshot. Move that file in `assets/`<br/>
     watchman.py will handle the naming.<br/>
 
