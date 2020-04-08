@@ -1,0 +1,16 @@
+#next1 {
+    position: absolute;
+    height: 700px;
+    bottom: 0;
+    left: 0;
+}
+
+#next2,#prev2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+img{
+    align-content: center;
+}

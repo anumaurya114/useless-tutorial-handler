@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style src='style.css'> </style>
+<body>
+    
+    <p id='pagenum'>Page number : 1</p>
+    <img id='imageSel' src='assets/1.png' alt='no img available'>
+    
+   
+    <input id='next2' type="button" name="b1" value="next" onclick="go_next_img()">
+    <input id='prev2' type="button" name="b2" value="prev" onclick="go_prev_img()">
+
+    <script>
+        function go_next_img()
+        {
+            var image = document.getElementById('imageSel');
+            
+            var img_num = image.getAttribute('src').split("/",2)[1].split(".",1)[0];
+            var next_img = parseInt(img_num)+1;
+            image.src = "assets/"+next_img.toString()+".png";
+            document.getElementById('pagenum').innerHTML = "Page number : "+next_img.toString();
+        }
+        function go_prev_img()
+        {
+            var image = document.getElementById('imageSel');
+            var img_num = image.getAttribute('src').split("/",2)[1].split(".",1)[0];
+            var next_img = parseInt(img_num)-1;
+            image.src = "assets/"+next_img.toString()+".png";
+            document.getElementById('pagenum').innerHTML = "Page number : "+next_img.toString();
+
+        }
+    </script>
+
+</body>
+</html>
